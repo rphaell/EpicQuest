@@ -7,6 +7,7 @@
     background-image: url('../images/image.png');
     text-align: center;
     background-size: cover;
+    
 
     @media (max-width: 768px) {
         background-image: url('../images/image.png');
@@ -15,6 +16,8 @@
         background-repeat: no-repeat;
         margin-top: -55px;
     }
+
+    
 
     .button {
         margin-top: 2vw;
