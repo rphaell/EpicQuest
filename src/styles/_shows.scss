@@ -12,7 +12,7 @@
         margin-top: 44px;
 
         @media(max-width:768px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
 
         &--is-active {
@@ -58,6 +58,11 @@
             @media (max-width:768px) {
                 font-size: 16px;
             }
+
+            @media (max-width:408px) {
+                font-size: 14px;
+            }
+        }
         }
     }
 }

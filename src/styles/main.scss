@@ -164,8 +164,12 @@ body {
     &__text_container {
         padding: 0 2vw;
 
-        h2 {
+        h2, p {
             margin-bottom: 24px;
+
+            @media(max-width:768px) {
+                text-align: center;
+            }
         }
     }
 
