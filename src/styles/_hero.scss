@@ -4,12 +4,12 @@
 .hero {
     padding: 5.6vw;
     min-height: 80vh;
-    background-image: url('../images/hero_desktop.jpeg');
+    background-image: url('../images/image.png');
     text-align: center;
     background-size: cover;
 
     @media (max-width: 768px) {
-        background-image: url('../images/hero_celular.jpeg');
+        background-image: url('../images/image.png');
         padding-top: calc(50vw  + 25px);
         background-size: contain;
         background-repeat: no-repeat;
@@ -78,7 +78,7 @@
                     font-size: 18px;
                     color: variables.$corTextoSecundario; // Use a variável importada
                     background: none; // garante que não há estilos de fundo conflitantes
-                    background-color: #6421ff;
+                    background-color: variables.$corDeFundoBotaoSecundario;
                     text-transform: uppercase;
                     border: 4px;
                     margin-top: 2vw;
