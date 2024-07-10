@@ -232,9 +232,15 @@
         <div id="player"></div>
     </div>
 
-    <!-- Hidden iframe for YouTube audio -->
-    <iframe id="audioPlayer" style="display: none;" src="https://www.youtube.com/watch?v=Dw6BCAZqkaQ" allow="autoplay"></iframe>
+    <iframe id="audioPlayer" style="display: none;" src="https://www.youtube.com/embed/Dw6BCAZqkaQ?autoplay=1&loop=0"></iframe>
 
+    <script>
+        // Stop the video after it has played once
+        document.getElementById('audioPlayer').onload = function() {
+            var iframe = document.getElementById('audioPlayer');
+            iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        };
+    </script>
 
     <script src="./dist/js/main.js"></script>
 
